@@ -57,3 +57,20 @@ The Air Quality Indicator project is designed to monitor air pollution levels in
 - (Optional) Wi-Fi module or Raspberry Pi for IoT and cloud integration.
 
 ### Flowchart of System Working
+Start → Initialize sensors and components → Read air quality data → Convert voltage to PPM → Is PPM > Threshold?
+↓ ↓
+Yes → Turn ON Buzzer & Red LED → Display "AQ Level High" → Send Alert
+No → Turn OFF Buzzer & Red LED → Turn ON Green LED → Display "AQ Level Good"
+↓
+Loop
+
+
+## Results
+- Successfully displays real-time air quality in PPM on LCD.  
+- Buzzer and LED alerts effectively notify when pollution goes beyond safe limits.  
+- System capable of capturing air pollution data remotely if combined with IoT/cloud.  
+- Can be implemented for indoor and outdoor air quality monitoring.
+
+## Conclusion
+This Arduino-based Air Quality Indicator provides an efficient, low-cost solution for real-time monitoring of air pollution. It effectively detects multiple harmful gases and alerts users when pollution exceeds safety thresholds. The system can be extended with IoT technologies for remote monitoring and data logging, supporting proactive environmental management and public health safety.
+
